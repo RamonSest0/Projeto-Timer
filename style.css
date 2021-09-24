@@ -1,0 +1,82 @@
+/* Inspirado em https://pomofocus.io/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color:rgb(115, 204, 27);
+}
+
+.container {
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    
+}
+
+.title {
+    text-align: left;
+    color: white;
+}
+
+.hr {
+    display: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 1px;
+    
+}
+
+.timer {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    background-color: rgba(250, 250, 250, 0.2);
+    border-radius: 10px;
+
+}
+
+#display {
+    
+    color: white;
+    font-size: 6.5em;
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+}
+
+button {
+    
+    font-family: 'Poppins', sans-serif;
+    color:rgb(131, 230, 32);
+    font-size: 2em;
+    border: none;
+    border-radius: 10px;
+    padding: 17px;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+#b-start {
+    margin-right: 10px;
+}
+
+#b-stop {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+    
