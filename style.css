@@ -32,7 +32,10 @@ body {
 
 .timer {
     position: absolute;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     left: 50%;
     top: 50%;
     transform:translate(-50%, -50%);
@@ -47,7 +50,8 @@ body {
 #display {
     
     color: white;
-    font-size: 6.5em;
+    font-size: 5rem;
+    font-weight: bolder;
     margin-bottom: 40px;
     margin-top: 30px;
 
@@ -57,7 +61,10 @@ button {
     
     font-family: 'Poppins', sans-serif;
     color:rgb(131, 230, 32);
-    font-size: 2em;
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 185px;
+    height: 82px;
     border: none;
     border-radius: 10px;
     padding: 17px;
@@ -66,14 +73,43 @@ button {
 
 }
 
-#b-start {
-    margin-right: 10px;
+@media (max-width: 900px) {
+
+    .timer {
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #display {
+        font-size: 4.3rem;
+    }
+
+    button {
+        width: 141px;
+        height: 68px;
+        /* position: relative; */
+        padding: 10px;
+        
+    }
+
+    #b-start {
+        margin-right: 0;
+    }
+
+    #b-stop {
+        margin-right: 0;
+    }
 }
 
-#b-stop {
-    margin-right: 10px;
+@media (max-width: 761px) {
+    #display {
+        font-size: 3.5rem;
+    }
 }
-
 
 
 
